@@ -1,0 +1,61 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no,shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="NOINDEX, NOFOLLOW">
+  <title>McDonald’s</title>
+  <meta name="theme-color" content="#fcfcfa">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="McDonald’s">
+  <link rel="apple-touch-icon" href="apple152-1.png">
+  <meta name="msapplication-TileColor" content="#000000">
+  <link rel="apple-touch-startup-image" href="pwa/splash/apple-splash-2048-2732.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-1668-2388.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-1536-2048.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-1668-2224.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-1620-2160.png" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-1284-2778.png" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-1170-2532.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-1125-2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-1242-2688.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-828-1792.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-1242-2208.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-750-1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-640-1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="icon" href="apple152-1.png">
+</head>
+<body style="margin: 0px;">
+
+<!--menu-->
+<img src="img/menu.jpg" id="menu" style="position:absolute; width:100%; top:39%; visibility:visible">
+<img src="https://i.imgur.com/cEXCtsY.png" id="bigMacButton" onclick="bigMac();" style="position:absolute; right:3%; top:17%; height:34%; visibility:visible">
+<img src="https://i.imgur.com/cEXCtsY.png" id="mcSundaeButton" onclick="mcSundae();" style="position:absolute; left:3%; top:17%; height:34%; visibility:visible">
+<img src="img/mccard.jpg" id="stabilSusMenu" style="position:fixed; top:0px; width:100%; visibility:visible">
+<img src="img/bottom.jpg" id="menu" style="position:absolute; width:100%; top:93%; visibility:visible">
+
+
+<!--item(s)-->
+<img src="https://i.imgur.com/5VzxbnP.png" id="bigMacMiscare" style="position:absolute; width:100%; visibility:hidden">
+<p id="expDate" style="position:absolute; top:63.5%; left:4.5%; font-family: arial; font-size:14px; opacity:0.3; visibility:hidden"></p>
+<img src="https://i.imgur.com/YPkRcZO.gif" id="redeemGif" style="position:absolute; top:23%; right:4%; height:23%; visibility:hidden">
+<b id="redeemGifDate" style="position:absolute; top:30.5%; right:19.5%; font-family: arial; font-size:33px; visibility:hidden"></b>
+<b id="redeemGifMonth" style="position:absolute; top:36%; right:20.5%; font-family: arial; font-size:13px; color:B59C7D; visibility:hidden"></b>
+<img src="https://i.imgur.com/DlGMMaE.png" id="bigMacStabilSus" style="position:fixed; top:0px; width:100%; visibility:hidden">
+<img src="https://i.imgur.com/DkhKxGE.png" id="back" onclick="menu();" style="position:fixed; top:4%; left:0px; width:14%; visibility:hidden">
+<img src="https://i.imgur.com/JRX0JmU.png" id="dots" style="position:fixed; top:4%; right:0px; width:12%; visibility:hidden">
+<img src="https://i.imgur.com/uLUMvw0.png" id="bigMacStabilJos" onclick="openRedeem10();" style="position:fixed; bottom:0px; width:100%; visibility:hidden">
+<p id="timeLeft" style="position:fixed; bottom:2.6%; right:4%; font-family: arial; font-size:15px; visibility:hidden"></p>
+<img src="https://i.imgur.com/zuPt1v4.png" id="grayShade" onclick="closeRedeem10();" style="position:fixed; opacity:0.5; visibility:hidden">
+<img src="https://i.imgur.com/ruuGjdt.png" id="redeem10dialog" style="position:fixed; bottom:0px; width:100%; visibility:hidden">
+<img src="https://i.imgur.com/CrdNZic.png" id="redeem10button" onclick="redeem();" style="position:fixed; bottom:5%; width:100%; visibility:hidden">
+
+</body>
+<style>
+body, html {
+  background-color: #fcfcfa;
+}
+</style>
+</html>
